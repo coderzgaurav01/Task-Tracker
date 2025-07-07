@@ -1,0 +1,121 @@
+.task_card {
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+    
+}
+
+.task_text {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.task_card_bottom_line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.task_delete {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.task_delete:hover {
+    background-color: #ebebeb;
+}
+
+.delete_icon {
+    width: 20px;
+    opacity: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.task_delete:hover .delete_icon {
+    opacity: 80%;
+}
+.edit_icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.task_due_date_display {
+  font-size: 12px;
+  color: #555;
+  margin-top: 4px;
+}
+.task_due_date_display.overdue {
+  color: red;
+  font-weight: bold;
+}
+.task_card_tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.task_actions {
+  display: flex;
+  gap: 10px;
+}
+
+.icon_button {
+  background: none;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.icon_button:focus-visible {
+  outline: 2px solid #6457f9;
+  outline-offset: 2px;
+}
+
+.delete_icon,
+.edit_icon {
+  width: 20px;
+  height: 20px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.icon_button:hover .delete_icon,
+.icon_button:hover .edit_icon {
+  opacity: 1;
+}
+
+.task_due_date_display {
+  font-size: 12px;
+  color: #555;
+  margin-top: 4px;
+}
+
+.task_due_date_display.overdue {
+  color: red;
+  font-weight: bold;
+}
+
+/* Reuse button styling for Save/Cancel */
+.task_submit {
+  font-size: 14px;
+  background-color: #6457f9;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  margin-right: 8px;
+  cursor: pointer;
+}
